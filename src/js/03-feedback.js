@@ -6,7 +6,11 @@ const refs = {
 refs.form.addEventListener('submit', onFormSubmit);
 refs.textarea.addEventListener('input', onTexareaInput);
 
-function onFormSubmit(evt) {}
+function onFormSubmit(evt) {
+  evt.preventDefault();
+}
+
+console.log('Отправляем форму');
 
 function onTexareaInput(evt) {}
 const message = evt.currentTarget.value;
