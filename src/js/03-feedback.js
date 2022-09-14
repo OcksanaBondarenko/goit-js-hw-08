@@ -9,5 +9,8 @@ refs.textarea.addEventListener('input', onTexareaInput);
 function onFormSubmit(evt) {}
 
 function onTexareaInput(evt) {}
-const value = evt.currentTarget.value;
-console.log(value);
+const message = evt.currentTarget.value;
+
+localStorage.setItem('feedback - msg', message);
+
+function populateMessageOutput() {}
