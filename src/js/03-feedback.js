@@ -6,7 +6,7 @@ const getStorage = localStorage.getItem(STORAGE_KEY);
 let formData = getStorage ? JSON.parse(getStorage) : {};
 // form.addEventListener('submit', throttle(onSubmitClick, 500));
 form.addEventListener('submit', onSubmitClick);
-form.addEventListener('input', _.throttle(inputTracking, 500));
+form.addEventListener('input', throttle(inputTracking, 500));
 
 checkStorage();
 
